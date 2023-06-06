@@ -21,7 +21,6 @@ INSTALLED_APPS = [
     'api',
     'rest_framework',
     'myapp.apps.MyappConfig',
-    # 'myapp',
     'django_json',
     'django.contrib.admin',
     'django.contrib.auth',

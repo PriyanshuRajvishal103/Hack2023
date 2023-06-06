@@ -1,5 +1,6 @@
-# from django.urls import path
+from django.urls import path
+from . import views
 
-# urlpatterns = [
-#     path('my-api', views.first_api),
-# ]
+urlpatterns = [
+    path('main', views.first_api),
+]
