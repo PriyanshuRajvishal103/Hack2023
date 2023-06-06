@@ -1,0 +1,15 @@
+{% load static %}
+{% load django_svelte %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Login PAGE</title>
+		<link rel='stylesheet' href='{% static "App.css" %}' type="text/css">
+		<link rel='stylesheet' href='{% static "Button.css" %}' type="text/css">
+	</head>
+	<body>
+		<h1>IGNORE</h1>
+		{% display_svelte 'app.svelte' %}
+		{% display_svelte 'button.svelte' %}
+</body>
+</html>

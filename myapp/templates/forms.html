@@ -1,0 +1,33 @@
+{% load static %}
+{% load django_svelte %}
+<html>
+    <head>
+        <title>FORMS</title>
+        <link rel="stylesheet" type="text/css" href="static\css\fbody.css">
+    </head>
+    <body>
+        <form action="info" autocomplete="off" method="POST" >{% csrf_token %}
+            <div class="tag">
+                NAME: <input class="inp" type="text" name="name">
+            </div>
+            
+            <div class="tag">
+                AGE : <input class="inp" type="number" name="age">
+            </div>
+            
+            <div class="tag">
+                EMAIL : <input class="inp" type="text" name="email" >
+            </div>
+            
+            <div class="tag">
+                PHONE : <input class="inp" type="text" name="phone">
+            </div>
+            
+            <div class="tag">
+                <input type="submit" value="STORE INTO DATABASE">
+            </div>
+            {% display_svelte 'app.svelte' %}
+            {% display_svelte 'main.svelte' %}
+    </form>
+</body>
+</html>
