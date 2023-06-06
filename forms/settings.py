@@ -18,9 +18,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'api',
     'rest_framework',
     'myapp.apps.MyappConfig',
     # 'myapp',
+    'django_json',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -110,6 +112,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR /"myapp"/"svelte" / "public" / "build",
     BASE_DIR /"myapp"/ "static",
+    BASE_DIR /"myapp/svelte/src",
 ]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

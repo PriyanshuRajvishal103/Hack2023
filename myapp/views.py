@@ -10,7 +10,7 @@ from .forms import InformationForm
 
 # importing serializers
 from .serializers import InformationSerializer
-
+from django.http import JsonResponse
 
 class InformationViewset(viewsets.ModelViewSet):
     queryset = Information.objects.all()
@@ -18,8 +18,12 @@ class InformationViewset(viewsets.ModelViewSet):
 
 
 def home(request):
-    return render(request, "home.html")
+    dict = {"age": 20,}
+    return render(request, "home.html",dict)
 
+def first_api(request):
+    data = {"message": "Hey there, this is rendered as api!"}
+    return JsonResponse(data)
 
 def sign(request):
     return render(request, "forms.html")
