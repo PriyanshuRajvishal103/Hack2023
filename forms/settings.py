@@ -110,8 +110,10 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     BASE_DIR /"myapp"/"svelte" / "public" / "build",
-    BASE_DIR /"myapp"/ "static",
+    BASE_DIR /"myapp/static",
     BASE_DIR /"myapp/svelte/src",
+    BASE_DIR /"myapp/static/css",
+    BASE_DIR /"myapp/static/js",
 ]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

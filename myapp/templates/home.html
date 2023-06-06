@@ -6,13 +6,14 @@
 		<title>Login PAGE</title>
 		<link rel='stylesheet' href='{% static "App.css" %}' type="text/css">
 		<link rel='stylesheet' href='{% static "Button.css" %}' type="text/css">
+		<link rel='stylesheet' href='{% static "home.css" %}' type="text/css">
 		<!-- *************************************************************************************** -->
     	<!-- <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
 	</head>
 	<body>
 		<h1>IGNORE</h1>
-		{{age}}
 		{% display_svelte 'app.svelte' %}
 		{% display_svelte 'button.svelte' %}
+		<p>Within django</p>
 	</body>
 </html>

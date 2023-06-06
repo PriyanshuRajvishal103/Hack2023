@@ -5,7 +5,7 @@
 </script>
 
 <main>
-    <p>{dict.message} = {dict.age}</p>
+    {dict.message}+
     <p>The value is  {count}</p>
     <button on:click={()=>count++}>Add</button>
     <button on:click={()=>count--}>SUBRACT</button>
