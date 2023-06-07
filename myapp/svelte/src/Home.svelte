@@ -4,7 +4,7 @@ alert("heelo world");
 
 <body>
     <div class="header">
-        <div id ="h1"class="hh"></div>
+        <h1 id ="h1"class="hh">Welcome to Booking platform</h1>
         <div id ="h2"class="hh"></div>
         <div id ="h3"class="hh">
            <div class="logparent">
