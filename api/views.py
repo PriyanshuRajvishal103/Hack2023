@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import JsonResponse
+import json
 
 def first_api(request):
-    data = {"message": "This message has been routed from api"}
+    with open('api\json\info.json') as f:
+        data = json.load(f)
     return JsonResponse(data)
